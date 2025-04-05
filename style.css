@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ccee66; /* cor de fundo */
+    color: white; /* cor do texto */
+    padding: 20px 160px; /* espaçamento interno */
+    height: 100vh; /* altura da tela */
+    font-family: "Noto Sans", sans-serif; /* fonte do texto */
+
+    overflow: hidden; /* oculta o conteúdo que ultrapassa a tela */
+}
+/* after(depois) / before(antes) */
+body::before{
+    content: "";
+    background: #202020; /* cor de fundo do pseudo-elemento */
+    position: absolute; /* posicionamento absoluto */
+    top: 0; /* posição superior */
+    left: -600px; /* posição esquerda */
+    transform: rotate(-70deg); /* rotação do pseudo-elemento */
+    width: 100%; /* largura do pseudo-elemento */
+    height: 120%; /* altura do pseudo-elemento */
+}
+
+body::after{
+    content: "Nike";
+    position: absolute; /* posicionamento absoluto */
+    top: 50%; /* posição superior */
+    left: 50%; /* posição esquerda */
+    transform: translate(-50%, -50%); /* centralização do pseudo-elemento */
+    color: black; /* cor do texto */
+    font-size: 250px; /* tamanho da fonte */
+    font-weight: bold; /* peso da fonte */
+    opacity: 0.5; /* transparencia */
+}
+/* after(depois) / before(antes) */
+
+/* class = . */
+.logo {
+    width: 80px; /* largura do logo */
+}
+
+h4{
+    font-size: 30px; /* tamanho da fonte */
+}
+
+h1{
+    font-size: 80px; /* tamanho da fonte */
+}
+
+p{
+    font-size: 16px; /* tamanho da fonte */
+    margin-bottom: 40px; /* espaçamento inferior */
+}
+
+.botao-carrinho {
+    background: #a3be52; /* cor de fundo do botão */
+    padding: 10px 20px; /* espaçamento interno do botão */
+    border-radius: 20px; /* borda arredondada do botão */
+    font-size: 16px; /* tamanho da fonte do botão */
+    color: black; /* cor do texto do botão */
+    cursor: pointer; /* cursor do mouse ao passar sobre o botão */
+    transition: 0.5s; /* transição suave ao passar o mouse */
+}
+
+.botao-carrinho:hover {
+    opacity: 0.7; /* transparencia */
+}
+
+.imagem-tenis {
+    width: 800px; /* largura da imagem do tênis */
+    transform: rotate(-25deg); /* rotação da imagem do tênis */
+}
+
+.caixa-principal {
+    display: flex; /* habilita alguns super poderes */
+    justify-content: space-between; /* alinha na horizontal */
+    align-items: center; /* alinha na vertical */
+    height: 75%; /* altura da caixa principal */
+    position: relative; /* posicionamento relativo */
+    z-index: 1; /* índice z para sobreposição */
+}
+
+.caixa-texto {
+    max-width: 500px; /* largura máxima da caixa de texto */
+}
+
+.caixa-botoes {
+    z-index: 2; /* índice z para sobreposição */
+    position: relative; /* posicionamento relativo */
+    display: flex; /* habilita alguns super poderes */
+    gap: 20px; /* espaçamento entre os botões */
+}
+.botoes {
+    width: 80px; /* largura dos botões */
+    height: 80px; /* altura dos botões */
+    border-radius: 50%; /* borda arredondada dos botões */
+    cursor: pointer; /* cursor do mouse ao passar sobre os botões */
+}
+
+.botoes:active{
+    opacity: 0.6; /* transparencia ao clicar */
+}
+
+.verde {
+    background: #ccee66; /* cor de fundo do botão verde */
+}
+
+.azul {
+    background: #58cced; /* cor de fundo do botão azul */
+}
+
+.rosa {
+    background: #ff9eb5; /* cor de fundo do botão rosa */
+}
